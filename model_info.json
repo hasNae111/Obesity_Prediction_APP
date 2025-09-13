@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "model_type": "obesity_risk_classifier",
+  "created_date": "2025-09-10",
+  "features": ["age", "weight", "height", "physical_activity", "diet_quality"],
+  "accuracy": 0.85
+}

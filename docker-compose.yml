@@ -1,0 +1,27 @@
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: obesity
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root_5202
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: .
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql+psycopg2://postgres:postgres@db:5432/obesity
+      SECRET_KEY: root_5202
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/app
+
+volumes:
+  pgdata:

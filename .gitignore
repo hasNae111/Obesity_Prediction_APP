@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.env.*
+*.log
+*.sqlite3
+*.db
+*.egg-info/
+dist/
+build/
+*.pytest_cache/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environnements
+venv/
+env/
+.venv/
+
+# Docker
+*.tar
+docker-compose.override.yml
+*.dockerignore
+
+# ML / Data
+data/
+app/ml/model.pkl
+app/ml/metadata.json
+*.h5
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Coverage
+htmlcov/
+.coverage
